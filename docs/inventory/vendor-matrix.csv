@@ -1,0 +1,15 @@
+Category,Vendor,Product Line,Management System,Protocols,Status
+Mobile RAN,Ericsson,AirScale,ENM,NETCONF/REST/SNMP,Primary
+Mobile RAN,Nokia,AirScale,NetAct,NETCONF/TL1,Secondary
+Core Routing,Cisco,ASR 9000,NSO/IOS-XR,NETCONF/RESTCONF/gRPC,Primary
+Core Routing,Juniper,MX Series,Junos Space,NETCONF/REST,Primary
+Core Routing,Nokia,7750 SR,NSP,NETCONF/SNMP,Secondary
+Optical,Ciena,6500 Series,Blue Planet,REST/NETCONF,Primary
+Optical,Infinera,Cloud Xpress,Infinera NCE,REST/NETCONF,Secondary
+Access,Nokia,7360 ISAM,5520 AMS,NETCONF/TL1,Legacy
+Access,Cisco,ASR 920,IOS-XE,NETCONF/RESTCONF,Current
+CPE,Technicolor,DJA0231,ACS,TR-069/TR-369,Current
+CPE,Cisco,Meraki MX,Meraki Dashboard,REST API,Business
+CPE,Arcadyan,Various,ACS,TR-069,Current
+SCADA,Schneider,EcoStruxure,StruxureWare,Modbus/SNMP,Current
+SCADA,GE,iFIX,Proficy,OPC/REST,Current

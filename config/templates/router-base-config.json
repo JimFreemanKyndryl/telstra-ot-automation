@@ -1,0 +1,59 @@
+{
+  "device_template": {
+    "vendor": "cisco",
+    "model": "asr9000",
+    "version": "7.0",
+    "configuration": {
+      "system": {
+        "hostname": "{{hostname}}",
+        "domain": "telstra.com.au",
+        "timezone": "Australia/Sydney"
+      },
+      "management": {
+        "ssh": {
+          "version": 2,
+          "timeout": 120,
+          "authentication": "key-based"
+        },
+        "snmp": {
+          "version": "v3",
+          "community": "{{snmp_community}}"
+        },
+        "netconf": {
+          "enabled": true,
+          "port": 830
+        }
+      },
+      "security": {
+        "aaa": {
+          "authentication": "tacacs+",
+          "authorization": "tacacs+",
+          "accounting": "tacacs+"
+        },
+        "acl": {
+          "management": "{{management_acl}}"
+        }
+      },
+      "interfaces": {
+        "management": {
+          "name": "MgmtEth0/RSP0/CPU0/0",
+          "ip": "{{management_ip}}",
+          "mask": "{{management_mask}}"
+        }
+      },
+      "routing": {
+        "bgp": {
+          "as": "{{bgp_as}}",
+          "router_id": "{{router_id}}"
+        }
+      },
+      "services": {
+        "telemetry": {
+          "enabled": true,
+          "destination": "{{telemetry_collector}}",
+          "interval": 30
+        }
+      }
+    }
+  }
+}
